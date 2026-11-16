@@ -155,7 +155,7 @@
     <div class="col-md-10">
         @Html.DropDownListFor(model => model.Role, new SelectList(new[]
         {
-            new { Text = "Khách hàng", Value = "Khách hàng" },
+            new { Text = "admin", Value = "admin" },
             new { Text = "Super Admin", Value = "Super Admin" }
         }, "Value", "Text"), "-- Chọn quyền hạn --", new { @class = "admin-input" })
         @Html.ValidationMessageFor(model => model.Role, "", new { @class = "text-danger small mt-1 d-block" })
